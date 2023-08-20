@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href = 'styles.css'>
+    <title>Weather app</title>
+    
+</head>
+
+    <body>
+        <div class ='notice'>
+            <span>Please note: You may need to add a country as some names  have multiple locations!</span>
+        </div>
+        <div class= 'container'>
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type = 'text' placeholder = 'Enter a location: '/>
+                <button class = 'fa-solid fa-magnifying-glass'></button>
+            </div>
+
+            <div class="not-found">
+                <img src = './images/notfound.png' alt ='Location is not found'/>
+                <p>Oops, That location dosent exist</p>
+            </div>
+
+            <div class = 'title'>
+                <p class ='city'></p>
+                <p class ='country'></p>
+            </div>
+            <div class="weather-box">
+                <img src = ''/>
+                <p class="temperature"> </p>
+                <p class = "description"></p>
+            </div>
+
+            <div class = 'weather-details'>
+                <div class = 'humidity'>
+                    <i class = 'fa-solid fa-water'></i>
+                    <div class = 'text'>
+                        <p>Humidity:</p>
+                        <span></span>
+                    
+                    </div>
+                </div>
+                <div class = 'wind'>
+                    <i class = 'fa-solid fa-wind'></i>
+                    <div class = 'text'>
+                        <p>Wind Speed:</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class = 'other-info'>
+                <div class = 'Fahrenheit'>
+                    <div class='text'>
+                        <i style = 'color:red' class="fa-solid fa-temperature-three-quarters"></i>
+                        <p>Fahrenheit:</p>
+                        <span></span>
+                    </div>
+                </div>
+                <div class = 'coordinates'>
+                    <div class = 'text'>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Longitude:</p>
+                        <span class='long'></span>
+                        <p>latitude:</p>
+                        <span class = 'lat'></span>
+                    </div>
+                </div>
+            </div>
+            <div class="min-max">
+                <div class="min-container">
+                    <i class="fa-solid fa-temperature-empty"></i>
+                    <p>min temperature today:</p>
+                    <span class ='min'></span>
+                </div>
+                <div class="max-container">
+                    <i class="fa-solid fa-temperature-full"></i>
+                    <p>max temperature today:</p>
+                    <span class ='max'></span>
+                </div>
+            </div>
+        </div>
+    <script src = 'https://kit.fontawesome.com/7c8801c017.js' 
+    crossorgin = 'anonymous'></script>
+
+    <script src = 'index.js'></script>
+  </body>
+</html>
