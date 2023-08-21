@@ -8,6 +8,7 @@
 
 body {
     height: 100%;
+    width:100%;
     margin-top:10%;
     margin-bottom:10%;
     display:flex;
@@ -54,6 +55,7 @@ body {
     gap:50px;
     align-items:center;
     justify-content:space-between;
+    
 }
 
 .search-box > input{
@@ -78,6 +80,7 @@ body {
     transition: 0.4s ease;
     font-size:22px;
     border-radius:50%;
+
 }
 
 button:hover {
@@ -238,6 +241,35 @@ button:hover {
 
 }
 
+@media(max-width: 800px){
+    .search-box {
+        width: 90%; /* Adjust the width to your preference */
+        gap: 10px; /* Adjust as needed */
+        justify-content: center; /* Center the items */
+    }
+    .notice {
+        width:90%;
+    }
+
+    .container {
+        width: 90%; /* Adjust as needed */
+        gap: 40px; /* Adjust as needed */
+    }
+
+    .other-info {
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap: 30px;
+    }
+
+    .min-max {
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap: 30px;
+    }
+}
 
 
 

@@ -133,8 +133,7 @@ search.addEventListener('click', async () => {
                 other_info.classList.add('fadeIn');
                 min_max.classList.add('fadeIn');
 
-
-                container.style.height = '900px';
+                container.style.height = '950px';
 
             })
             .catch(err => {
