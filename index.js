@@ -5,6 +5,7 @@ you can note specific items like buttons by specifying class name and then eleme
 
 //fetch url:
 
+
 const body = document.querySelector('body')
 const container = document.querySelector('.container');
 const error = document.querySelector('.not-found');
@@ -19,7 +20,7 @@ const min_max = document.querySelector('.min-max')
 
 //when you click the search button
 search.addEventListener('click', async () => {
-    const APIkey = '94e9b90329af5893238a9ddb8df036b6';
+    const APIkey = window.env.API_KEY;
     const city = document.querySelector('.search-box input').value; 
 
     //quick note: don't use include unless you want it if given value
